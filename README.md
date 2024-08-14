@@ -75,6 +75,12 @@ The ROC curves showed that the **XGBoost model** had a higher AUC compared to th
 - **Overall Performance:** The modest improvement in AUC and recall highlights the benefits of hyperparameter tuning and class balancing.
 
 In summary, the **XGBoost model** emerged as the superior model, providing better predictive accuracy and class discrimination.
+Base Model Classification Report
+![Screenshot 2024-08-14 at 1 16 05 AM](https://github.com/user-attachments/assets/ea8e9a60-c19e-4831-b2f4-7869b62b7098)
+Base Model Classification Report
+![Screenshot 2024-08-14 at 1 16 11 AM](https://github.com/user-attachments/assets/70753b8d-991b-417a-a7fa-2a715bb5aa94)
+Model Evaluation : ROC/AUC
+![Screenshot 2024-08-14 at 1 16 20 AM](https://github.com/user-attachments/assets/a487ae45-9693-45e5-bfe3-5767a1b1534a)
 
 ## Conclusion
 
