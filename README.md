@@ -92,16 +92,11 @@ In summary, the **XGBoost model**, with its higher AUC and solid Gini Coefficien
 Deploy the model using a Streamlit app (app.py). The app allows users to input house data and get price predictions. To run the app, execute the following command:
 
 https://defaulter-credit-card-predictionml-vbua5rzo5qe4dcrhnhhrwb.streamlit.app/
+
 ![Animation_23](https://github.com/user-attachments/assets/3a54a724-35ea-4baa-9eb3-e7403cd8fe14)
 
 ## Conclusion
 
 The notebook concludes with a summary of the model performances, highlighting the best-performing model and potential areas for further improvement.
 
-## How to Use
-
-1. Clone the repository or download the notebook.
-2. Ensure you have all the required libraries installed. You can install them using:
-   ```bash
-   pip install -r requirements.txt
 
