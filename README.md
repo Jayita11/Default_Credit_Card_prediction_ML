@@ -7,7 +7,7 @@ This Jupyter Notebook contains the code and analysis for predicting credit card 
 1. [Libraries and Dataset](#libraries-and-dataset)
 2. [Data Preprocessing](#data-preprocessing)
 3. [Exploratory Data Analysis](#exploratory-data-analysis)
-4. [Model Training](#model-training)
+4. [Model Training & Selection](#model-training-&-Selection)
 5. [Model Evaluation](#model-evaluation)
 6. [Conclusion](#conclusion)
 
@@ -37,7 +37,7 @@ EDA is performed to understand the distribution and relationships within the dat
 - Identifying correlations between features and the target variable
 - Handling missing values and outliers
 
-## Model Training
+## Model Training & Selection
 
 The primary model used for predicting credit card defaults is **Logistic Regression**, chosen for its simplicity and interpretability. After establishing a baseline performance with Logistic Regression, additional models were tested to explore potential improvements in predictive accuracy. These models include:
 
@@ -47,8 +47,13 @@ The primary model used for predicting credit card defaults is **Logistic Regress
 
 Each of these models was trained on the same preprocessed training data, and their performance was compared against the baseline Logistic Regression model. The aim was to determine whether the use of more complex models could lead to better predictive accuracy and overall model performance.
 
-Performance metrics, such as **F1 Score** and **ROC-AUC**, were used to evaluate and compare the effectiveness of these models.
+### Best Model Selection: Attempt 2 with Under-Sampling and XGBoost
 
+After evaluating various models and approaches, the best model was selected based on **Attempt 2**, which used **Under-Sampling with XGBoost**. 
+
+**Using SMOTE** didn’t effectively increase recall in this case, likely due to the introduction of noise or overlapping examples between classes. Instead, **Under-Sampling** was chosen to better focus the model on the minority class. This method reduces the dominance of the majority class, enabling the model to identify more true positives in the minority class, thus increasing recall. This approach is particularly beneficial when the priority is to capture more instances of the minority class, even if it means potentially increasing false positives.
+
+In summary, the **XGBoost** model with under-sampling was selected as the best model, offering a balanced trade-off between precision and recall, and effectively addressing the class imbalance issue.
 
 ## Model Evaluation
 
