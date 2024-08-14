@@ -9,7 +9,8 @@ This Jupyter Notebook contains the code and analysis for predicting credit card 
 3. [Exploratory Data Analysis](#exploratory-data-analysis)
 4. [Model Training & Selection](#model-training-&-Selection)
 5. [Model Evaluation](#model-evaluation)
-6. [Conclusion](#conclusion)
+6. [Deployment](#deployment)
+7. [Conclusion](#conclusion)
 
 ## Libraries and Dataset
 
@@ -84,6 +85,10 @@ In summary, the **XGBoost model** emerged as the superior model, providing bette
 -Model Evaluation : ROC/AUC
 
 ![Screenshot 2024-08-14 at 1 16 20 AM](https://github.com/user-attachments/assets/a487ae45-9693-45e5-bfe3-5767a1b1534a)
+
+## Deployment
+Deploy the model using a Streamlit app (app.py). The app allows users to input house data and get price predictions. To run the app, execute the following command:
+
 
 ## Conclusion
 
