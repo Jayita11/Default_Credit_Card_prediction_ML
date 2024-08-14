@@ -66,16 +66,18 @@ The **Logistic Regression** model achieved an AUC of **0.7474**, indicating mode
 
 The **XGBoost** model, optimized with **Optuna**, outperformed the baseline with an AUC of **0.7764**. This model showed improved recall and better overall discrimination between classes.
 
-### ROC Curve Analysis
+### ROC Curve and Gini Coefficient Analysis
 
-The ROC curves showed that the **XGBoost model** had a higher AUC compared to the **Logistic Regression model**, particularly improving recall, which aligns with the goal to capture more positive cases.
+- **AUC:** The XGBoost model achieved an AUC of **0.7764**, suggesting good discrimination between events and non-events.
+- **Gini Coefficient:** The model's Gini Coefficient was calculated as **0.5529**. This further confirms that the model is effective in its predictions. The Gini Coefficient ranges from -1 to 1, where a value closer to 1 signifies a perfect model, 0 indicates a model with no discriminative power, and -1 signifies a perfectly incorrect model.
 
 ### Insights
 
-- **Recall Improvement:** XGBoost demonstrated better recall, effectively identifying more defaulters.
-- **Overall Performance:** The modest improvement in AUC and recall highlights the benefits of hyperparameter tuning and class balancing.
+- **AUC of 0.77:** The model is good at distinguishing between events and non-events.
+- **Gini Coefficient of 0.55:** This value supports the conclusion that the XGBoost model is effective in its predictions.
 
-In summary, the **XGBoost model** emerged as the superior model, providing better predictive accuracy and class discrimination.
+In summary, the **XGBoost model**, with its higher AUC and solid Gini Coefficient, emerged as the superior model, providing better predictive accuracy and class discrimination compared to the baseline Logistic Regression model.
+
 -Base Model Classification Report
 
 ![Screenshot 2024-08-14 at 1 16 05 AM](https://github.com/user-attachments/assets/ea8e9a60-c19e-4831-b2f4-7869b62b7098)
@@ -89,6 +91,7 @@ In summary, the **XGBoost model** emerged as the superior model, providing bette
 ## Deployment
 Deploy the model using a Streamlit app (app.py). The app allows users to input house data and get price predictions. To run the app, execute the following command:
 
+https://defaulter-credit-card-predictionml-vbua5rzo5qe4dcrhnhhrwb.streamlit.app/
 
 ## Conclusion
 
