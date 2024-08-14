@@ -39,22 +39,37 @@ EDA is performed to understand the distribution and relationships within the dat
 
 ## Model Training
 
-The notebook explores multiple machine learning models, including:
+The primary model used for predicting credit card defaults is **Logistic Regression**, chosen for its simplicity and interpretability. After establishing a baseline performance with Logistic Regression, additional models were tested to explore potential improvements in predictive accuracy. These models include:
 
-- Logistic Regression
-- Support Vector Machine (SVM)
-- Random Forest Classifier
-- XGBoost Classifier
+- **Support Vector Machine (SVC):** A robust classifier that seeks to maximize the margin between different classes.Improved class separation but was computationally expensive.
+- **Random Forest Classifier:** An ensemble learning method that combines multiple decision trees to improve model performance and reduce overfitting.Provided better handling of class imbalance and robustness to overfitting, with significant performance gains.
+- **XGBoost Classifier:** An advanced gradient boosting algorithm known for its efficiency and accuracy in classification tasks.Achieved the highest F1-scores and ROC-AUC metrics, making it the top performer.
 
-Each model is trained using the preprocessed training data, and hyperparameter tuning is performed where necessary.
+Each of these models was trained on the same preprocessed training data, and their performance was compared against the baseline Logistic Regression model. The aim was to determine whether the use of more complex models could lead to better predictive accuracy and overall model performance.
+
+Performance metrics, such as **F1 Score** and **ROC-AUC**, were used to evaluate and compare the effectiveness of these models.
+
 
 ## Model Evaluation
 
-The models are evaluated using various metrics, including:
+### Baseline Model: Logistic Regression
 
-- **F1 Score:** To measure the balance between precision and recall.
-- **ROC-AUC:** To assess the model's ability to distinguish between classes.
-- **Cross-Validation:** To evaluate the model's generalizability.
+The **Logistic Regression** model achieved an AUC of **0.7474**, indicating moderate ability in distinguishing between defaulters and non-defaulters. However, it struggled with recall for the minority class.
+
+### Best Model: XGBoost Classifier
+
+The **XGBoost** model, optimized with **Optuna**, outperformed the baseline with an AUC of **0.7764**. This model showed improved recall and better overall discrimination between classes.
+
+### ROC Curve Analysis
+
+The ROC curves showed that the **XGBoost model** had a higher AUC compared to the **Logistic Regression model**, particularly improving recall, which aligns with the goal to capture more positive cases.
+
+### Insights
+
+- **Recall Improvement:** XGBoost demonstrated better recall, effectively identifying more defaulters.
+- **Overall Performance:** The modest improvement in AUC and recall highlights the benefits of hyperparameter tuning and class balancing.
+
+In summary, the **XGBoost model** emerged as the superior model, providing better predictive accuracy and class discrimination.
 
 ## Conclusion
 
