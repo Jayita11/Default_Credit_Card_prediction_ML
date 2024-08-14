@@ -2,6 +2,8 @@
 
 This Jupyter Notebook contains the code and analysis for predicting credit card defaulters using various machine learning models. The dataset used in this notebook is split into training and test sets, and several preprocessing steps are performed before model training and evaluation.
 
+![7a758c47-7d4b-4500-a892-ca9e1c44c36d](https://github.com/user-attachments/assets/709e8f04-1b78-424c-a908-8674fcdf5a76)
+
 ## Table of Contents
 
 1. [Libraries and Dataset](#libraries-and-dataset)
