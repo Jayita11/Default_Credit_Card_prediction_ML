@@ -91,7 +91,7 @@ In summary, the **XGBoost model**, with its higher AUC and solid Gini Coefficien
 ![Screenshot 2024-08-14 at 1 16 20 AM](https://github.com/user-attachments/assets/a487ae45-9693-45e5-bfe3-5767a1b1534a)
 
 ## Deployment
-Deploy the model using a Streamlit app (app.py). The app allows users to input house data and get price predictions. To run the app, execute the following command:
+Deploy the model using a Streamlit app (`app.py`). The app allows users to input various data about credit card holders to predict whether a customer will default or not. To use the app, follow the link provided below:
 
 https://defaulter-credit-card-predictionml-vbua5rzo5qe4dcrhnhhrwb.streamlit.app/
 
