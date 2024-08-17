@@ -12,7 +12,8 @@ This Jupyter Notebook contains the code and analysis for predicting credit card 
 4. [Model Training & Selection](#model-training-&-Selection)
 5. [Model Evaluation](#model-evaluation)
 6. [Deployment](#deployment)
-7. [Conclusion](#conclusion)
+7. [💻 Run Instructions](#run-instructions)
+8. [Conclusion](#conclusion)
 
 ## Libraries and Dataset
 
@@ -89,6 +90,52 @@ In summary, the **XGBoost model**, with its higher AUC and solid Gini Coefficien
 -Model Evaluation : ROC/AUC
 
 ![Screenshot 2024-08-14 at 1 16 20 AM](https://github.com/user-attachments/assets/a487ae45-9693-45e5-bfe3-5767a1b1534a)
+
+## 🖥️ Run Instructions
+
+If you wish to run this project locally, follow these steps:
+
+1. **Clone the repository**:
+
+    ```bash
+    git clone [https://github.com/Jayita11/Defaulter-Credit-Card-Prediction_ML]
+    cd Defaulter-Credit-Card-Prediction_ML
+    ```
+
+2. **Set up a virtual environment**:
+
+    ```bash
+    python -m venv env
+    ```
+
+    Activate the environment:
+
+    - On macOS/Linux:
+      ```bash
+      source env/bin/activate
+      ```
+    - On Windows:
+      ```bash
+      env\Scripts\activate
+      ```
+
+3. **Install the required dependencies**:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Run the Streamlit app**:
+
+    ```bash
+    streamlit run app.py
+    ```
+
+5. **Access the app**:
+
+    Open your browser and go to [http://localhost:8501](http://localhost:8501) to use the Defaulter Credit Card Prediction_ML app.
+
+
 
 ## Deployment
 Deploy the model using a Streamlit app (`app.py`). The app allows users to input various data about credit card holders to predict whether a customer will default or not. To use the app, follow the link provided below:
