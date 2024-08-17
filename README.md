@@ -99,6 +99,11 @@ Deploy the model using a Streamlit app (`app.py`). The app allows users to input
 
 https://defaulter-credit-card-predictionml-vbua5rzo5qe4dcrhnhhrwb.streamlit.app/
 
+![Screenshot 2024-08-17 at 12 09 41 AM](https://github.com/user-attachments/assets/b0bdf0ee-d96a-4a1d-b63a-cddf4afed56c)
+
+![Screenshot 2024-08-17 at 12 09 51 AM](https://github.com/user-attachments/assets/53637ef3-55b3-4f45-955c-0201e044dbf8)
+
+
 ![Animation_23](https://github.com/user-attachments/assets/3a54a724-35ea-4baa-9eb3-e7403cd8fe14)
 
 ## 🖥️ Run Instructions
