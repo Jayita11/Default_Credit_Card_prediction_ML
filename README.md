@@ -91,6 +91,16 @@ In summary, the **XGBoost model**, with its higher AUC and solid Gini Coefficien
 
 ![Screenshot 2024-08-14 at 1 16 20 AM](https://github.com/user-attachments/assets/a487ae45-9693-45e5-bfe3-5767a1b1534a)
 
+
+
+
+## Deployment
+Deploy the model using a Streamlit app (`app.py`). The app allows users to input various data about credit card holders to predict whether a customer will default or not. To use the app, follow the link provided below:
+
+https://defaulter-credit-card-predictionml-vbua5rzo5qe4dcrhnhhrwb.streamlit.app/
+
+![Animation_23](https://github.com/user-attachments/assets/3a54a724-35ea-4baa-9eb3-e7403cd8fe14)
+
 ## 🖥️ Run Instructions
 
 If you wish to run this project locally, follow these steps:
@@ -135,14 +145,6 @@ If you wish to run this project locally, follow these steps:
 
     Open your browser and go to [http://localhost:8501](http://localhost:8501) to use the Defaulter Credit Card Prediction_ML app.
 
-
-
-## Deployment
-Deploy the model using a Streamlit app (`app.py`). The app allows users to input various data about credit card holders to predict whether a customer will default or not. To use the app, follow the link provided below:
-
-https://defaulter-credit-card-predictionml-vbua5rzo5qe4dcrhnhhrwb.streamlit.app/
-
-![Animation_23](https://github.com/user-attachments/assets/3a54a724-35ea-4baa-9eb3-e7403cd8fe14)
 
 ## Conclusion
 
